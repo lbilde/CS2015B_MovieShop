@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace MovieShopDll.Entities
 {
-    public class Address
+    public class Address : AbstractEntity
     {
-        public int Id { get; set; }
         public string StreetName { get; set; }
         public string StreetNumber { get; set; }
         public string ZipCode { get; set; }
         public string Country { get; set; }
-        
+        public Customer Customer { get; set; }
     }
 }

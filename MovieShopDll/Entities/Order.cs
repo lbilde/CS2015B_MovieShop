@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace MovieShopDll.Entities
 {
-    public class Order
+    public class Order : AbstractEntity
     {
-        public int Id { get; set; }
-        public Movie Movie { get; set; }
+        public List<Movie> Movies { get; set; }
         public Customer Customer { get; set; }
 
     }

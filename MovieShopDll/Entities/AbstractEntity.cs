@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace MovieShopDll.Entities
 {
-    public class Genre : AbstractEntity
+    public abstract class AbstractEntity
     {
-        public string Name { get; set; }
-        public List<Movie> Movies { get; set; }
-
+        public int Id { get; set; }
     }
 }
