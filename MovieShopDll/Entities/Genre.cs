@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MovieShopDll
+namespace MovieShopDll.Entities
 {
-    public class Class1
+    public class Genre
     {
+        public int Id { get; set; }
+        public string Name { get; set; }
     }
 }
